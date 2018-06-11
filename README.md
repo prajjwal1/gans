@@ -1,7 +1,8 @@
 # Generative Adversarial Networks
 This repository contains implementation of various architectures of Generative Models.
 
-## Papers to read
+## Papers to read (Prerequisites)
+- [Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks](https://arxiv.org/abs/1511.06434)
 - [Generative Adversarial Networks](https://papers.nips.cc/paper/5423-generative-adversarial-nets.pdf) by Ian Goodfellow et al.
 - [Wasserstein GAN](https://arxiv.org/abs/1701.07875) by Soumith et al.
 - [Improved training of Wasserstein GANs](https://arxiv.org/abs/1704.00028) by Arjovsky et al.
@@ -31,6 +32,9 @@ $ git clone https://github.com/prajjwal1/gans
 ```
 
 ## Wasserstein GANs
+The following algorithm has been implemented (Train module)
+![1](assets/wgan_algorithm.png)
+
 To train the model:
 ```
 $ cd WGAN

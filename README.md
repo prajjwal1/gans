@@ -17,14 +17,37 @@ This repository contains implementation of various architectures of Generative M
 - Tensorflow
 - Pytorch
 - Numpy
-- Fastai
+- Fastai (Download it from [here](https://github.com/fastai/fastai))
 
-##Sample of images trained using Wasserstein GANs on CPU
+Usage of GPU is highly recommended. 
 
-### CIFAR 10
-![im1](images/cifar10_samples_1.jpg)
+## Datasets used
+- [LSUN (Large Scale Scene Understanding Challenge)](http://lsun.cs.princeton.edu/) 
+- [MNIST](http://yann.lecun.com/exdb/mnist/)
+
+## Cloning the Repository
+```
+$ git clone https://github.com/prajjwal1/gans
+```
+
+## Wasserstein GANs
+To train the model:
+```
+$ cd WGAN
+$ python wgan_core.py
+```
+You can tune hyperparamter as per your own use and feel free to experiment it on different datasets. Change the PATH properly as per your setup.
+
+## Results on datasets
+### LSUN
+![1](output/lsun.png)
+
+The model has been trained for 250 epochs on this [dataset](https://www.kaggle.com/jhoward/lsun_bedroom). The original dataset is very large (43 GB). Trained on NVIDIA GTX 1080. To get a much more clear output, use the whole dataset with 500 epochs.
+
 
 ### MNIST
-![1](output/wgan1.png)  ![2](output/wgan2.png) ![3](output/wgan3.png)  
-  ![4](output/wgan4.png)
+![1](output/wgan1.png)  
+This was trainind on CPU for 10-20 epochs.
 
+## Note
+This repository is under constant development. Will be updated regularly. For Academic Research only

@@ -11,47 +11,34 @@ This repository contains implementation of various architectures of Generative M
 ## Implemented architectures
 - GANs
 - Wasserstein GANs
-- WGANs with improved training
+- WGAN with gradient penalty
 - CycleGANs (soon)
 
 ## Prerequisites
-- Tensorflow
-- Pytorch
+- Pytorch >= 1.0
+- [Tensorop](https://github.com/prajjwal1/tensorop)
 - Numpy
-- Fastai (Download it from [here](https://github.com/fastai/fastai))
+- [Fastai](https://github.com/fastai/fastai))
 
 Usage of GPU is highly recommended. 
 
 ## Datasets used
-- [LSUN (Large Scale Scene Understanding Challenge)](http://lsun.cs.princeton.edu/) 
+- [LSUN](http://lsun.cs.princeton.edu/) 
 - [MNIST](http://yann.lecun.com/exdb/mnist/)
+- [Celeb A](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html)
 
 ## Cloning the Repository
 ```
 $ git clone https://github.com/prajjwal1/gans
 ```
 
-## Wasserstein GANs
-The following algorithm has been implemented (Train module)
-![1](assets/wgan_algorithm.png)
-
+### WGAN GP
 To train the model:
 ```
 $ cd WGAN
-$ python wgan_core.py
+$ python wgan_gp.py
 ```
-You can tune hyperparamter as per your own use and feel free to experiment it on different datasets. Change the PATH properly as per your setup.
 
-## Results on datasets
-### LSUN
-![1](output/lsun.png)
-
-The model has been trained for 250 epochs on this [dataset](https://www.kaggle.com/jhoward/lsun_bedroom). The original dataset is very large (43 GB). Trained on NVIDIA GTX 1080. To get a much more clear output, use the whole dataset with 500 epochs.
-
-
-### MNIST
-![1](output/wgan1.png)  
-This was trainind on CPU for 10-20 epochs.
 
 ## Note
-This repository is under constant development. Will be updated regularly. For Academic Research only
+This repository is under constant development. Will be updated regularly. 

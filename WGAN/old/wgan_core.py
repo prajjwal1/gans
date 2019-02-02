@@ -1,17 +1,4 @@
-
-# coding: utf-8
-
-# In[16]:
-
-
-get_ipython().run_line_magic('matplotlib', 'inline')
-get_ipython().run_line_magic('reload_ext', 'autoreload')
-get_ipython().run_line_magic('autoreload', '')
-
-
-# In[17]:
-
-
+#fastai==0.7
 from fastai.conv_learner import *
 from fastai.dataset import *
 import gzip

@@ -5,10 +5,10 @@ This repository contains implementation of various architectures of Generative M
 - GANs
 - Wasserstein GANs
 - WGAN with gradient penalty
+- StyleGAN
 
 ## Prerequisites
-- Pytorch >= 1.0
-- [Tensorop](https://github.com/prajjwal1/tensorop)
+- Pytorch 
 - Numpy
 
 Usage of GPU is highly recommended. 
@@ -17,24 +17,6 @@ Usage of GPU is highly recommended.
 - [LSUN](http://lsun.cs.princeton.edu/) 
 - [MNIST](http://yann.lecun.com/exdb/mnist/)
 - [Celeb A](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html)
-
-## Cloning the Repository
-```
-$ git clone https://github.com/prajjwal1/gans
-```
-## Examples
-- [Wasserstein GANs](https://github.com/prajjwal1/tensorop/blob/master/nbs/WGANs.ipynb)
-
-### Training
-To train the model:
-```
-$ cd WGAN
-$ python wgan_gp.py #For WGAN GP
-$ python wgan.py # For WGAN
-```
-
-## Note
-This repository is under constant development. Will be updated regularly. 
 
 
 ## References
